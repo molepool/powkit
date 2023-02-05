@@ -15,5 +15,5 @@ func DefaultDir(name string) string {
 	if runtime.GOOS == "windows" {
 		return filepath.Join(home, "AppData", "PowCache")
 	}
-	return filepath.Join(home, name)
+	return filepath.Join(name)
 }
